@@ -1,39 +1,34 @@
 export function Home() {
   return (
-    <section className="pt-24 px-6 max-w-3xl mx-auto space-y-12">
-      <div className="space-y-4">
-        <h1 className="text-5xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
-          Olá, eu sou [Seu Nome]
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          Sou um desenvolvedor web focado em design minimalista, performance e conteúdo útil. Gosto de criar coisas simples, úteis e duráveis.
-        </p>
-      </div>
+    <section className="h-screen flex flex-col justify-center items-center text-center px-4">
+      <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
+        <span className="text-blue-600 dark:text-blue-400">Henrique Almeida</span>
+      </h1>
 
-      <div className="flex flex-col sm:flex-row gap-4">
+      <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-8">
+        Desenvolvedor web focado em performance, acessibilidade e minimalismo. Gosto de criar experiências digitais simples e elegantes usando tecnologias modernas como React, Tailwind, e Vite.
+      </p>
+
+      <div className="flex flex-wrap justify-center gap-4">
         <a
           href="/projects"
-          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+          className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
-          Ver Projetos
-        </a>
-        <a
-          href="/blog"
-          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
-        >
-          Blog Técnico
+          Meus Projetos
         </a>
         <a
           href="/about"
-          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+          className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           Sobre mim
         </a>
+        <a
+          href="/contact"
+          className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+        >
+          Contato
+        </a>
       </div>
-
-      <footer className="text-sm text-gray-500 dark:text-gray-400 pt-16">
-        <p>Esse site é um experimento de clareza, simplicidade e código limpo.</p>
-      </footer>
     </section>
   );
 }
