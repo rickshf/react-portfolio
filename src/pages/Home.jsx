@@ -1,36 +1,39 @@
 export function Home() {
   return (
-    <section className="space-y-8">
-      <div className="text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+    <section className="pt-24 px-6 max-w-3xl mx-auto space-y-12">
+      <div className="space-y-4">
+        <h1 className="text-5xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
           Olá, eu sou [Seu Nome]
         </h1>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-          Desenvolvedor focado em web minimalista, performance, e acessibilidade.  
-          Crio soluções simples e eficientes com código limpo e propósito.
+        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+          Sou um desenvolvedor web focado em design minimalista, performance e conteúdo útil. Gosto de criar coisas simples, úteis e duráveis.
         </p>
       </div>
 
-      <div className="flex justify-center space-x-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <a
           href="/projects"
-          className="px-4 py-2 border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
         >
           Ver Projetos
         </a>
         <a
           href="/blog"
-          className="px-4 py-2 border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
         >
           Blog Técnico
         </a>
+        <a
+          href="/about"
+          className="px-6 py-3 rounded border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+        >
+          Sobre mim
+        </a>
       </div>
 
-      <div className="text-center text-sm text-gray-500 dark:text-gray-400 pt-8">
-        <p>
-          Código open-source. Minimalismo é clareza.
-        </p>
-      </div>
+      <footer className="text-sm text-gray-500 dark:text-gray-400 pt-16">
+        <p>Esse site é um experimento de clareza, simplicidade e código limpo.</p>
+      </footer>
     </section>
   );
 }
