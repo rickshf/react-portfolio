@@ -1,14 +1,19 @@
-import { posts } from "../data/posts";
 import ReactMarkdown from "react-markdown";
+import primeiroPost from "../posts/primeiro-post.md?raw";
 
 export function Blog() {
+  const posts = [
+    {
+      slug: "primeiro-post",
+      title: "Por que escolhi Tailwind para meu portfólio",
+      date: "2025-05-20",
+      content: primeiroPost,
+    }
+  ];
+
   return (
     <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Blog</h1>
-      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-        Artigos e reflexões sobre desenvolvimento, minimalismo e ferramentas digitais.
-      </p>
-
       <div className="mt-8 space-y-10">
         {posts.map((post) => (
           <div key={post.slug} className="border-b pb-6 dark:border-gray-700">
