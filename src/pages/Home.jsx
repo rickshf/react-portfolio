@@ -1,14 +1,25 @@
 export function Home() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-4">
-      <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
-        <span className="text-blue-600 dark:text-blue-400">Henrique Almeida</span>
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+      {/* Nome grande com link para o GitHub */}
+      <h1 className="text-6xl font-extrabold tracking-tight text-blue-500 mb-6">
+        <a
+          href="https://github.com/rickshf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          rickshf
+        </a>
       </h1>
 
-      <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-8">
-        Desenvolvedor web focado em performance, acessibilidade e minimalismo. Gosto de criar experiências digitais simples e elegantes usando tecnologias modernas como React, Tailwind, e Vite.
+      {/* Bio */}
+      <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-10">
+        Desenvolvedor web com foco em minimalismo, código limpo e boas práticas. 
+        Crio aplicações modernas com React, Tailwind e tecnologias open source.
       </p>
 
+      {/* Botões de navegação */}
       <div className="flex flex-wrap justify-center gap-4">
         <a
           href="/projects"

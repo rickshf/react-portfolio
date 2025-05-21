@@ -5,7 +5,7 @@ export function Navbar({ darkMode, setDarkMode }) {
     <header className="py-4 border-b dark:border-gray-700">
       <div className="flex justify-between items-center max-w-4xl mx-auto px-4">
         <h1 className="text-xl font-semibold">
-          <Link to="/">Meu Portfólio</Link>
+          <Link to="/">Início</Link>
         </h1>
         <nav className="space-x-4">
           <Link to="/">Início</Link>
