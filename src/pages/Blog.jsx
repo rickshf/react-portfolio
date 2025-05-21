@@ -18,9 +18,6 @@ export function Blog() {
             <time className="block text-sm text-gray-500 dark:text-gray-400 mb-2">
               {post.date}
             </time>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              {post.content.slice(0, 200)}…
-            </p>
           </article>
         ))}
       </div>
