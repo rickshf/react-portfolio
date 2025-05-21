@@ -1,7 +1,6 @@
 export function Home() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
-      {/* Nome grande com link para o GitHub */}
       <h1 className="text-6xl font-extrabold tracking-tight text-blue-500 mb-6">
         <a
           href="https://github.com/rickshf"
@@ -13,13 +12,11 @@ export function Home() {
         </a>
       </h1>
 
-      {/* Bio */}
       <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-10">
         Desenvolvedor web com foco em minimalismo, código limpo e boas práticas. 
         Crio aplicações modernas com React, Tailwind e tecnologias open source.
       </p>
 
-      {/* Botões de navegação */}
       <div className="flex flex-wrap justify-center gap-4">
         <a
           href="/projects"

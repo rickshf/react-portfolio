@@ -1,26 +1,24 @@
 import { Link } from "react-router-dom";
 
-export function Navbar({ darkMode, setDarkMode }) {
+export function Navbar() {
   return (
-    <header className="py-4 border-b dark:border-gray-700">
-      <div className="flex justify-between items-center max-w-4xl mx-auto px-4">
-        <h1 className="text-xl font-semibold">
-          <Link to="/">Início</Link>
-        </h1>
-        <nav className="space-x-4">
-          <Link to="/">Início</Link>
-          <Link to="/about">Sobre</Link>
-          <Link to="/projects">Projetos</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contato</Link>
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="ml-2 text-sm border px-2 py-1 rounded"
-          >
-            {darkMode ? "☀️" : "🌙"}
-          </button>
-        </nav>
+    <nav className="w-full py-4 px-6 border-b dark:border-gray-700 text-sm">
+      <div className="max-w-5xl mx-auto flex justify-between items-center">
+        <Link to="/" className="font-semibold text-gray-800 dark:text-white">
+          rickshf
+        </Link>
+        <div className="space-x-4">
+          <Link to="/projects" className="hover:underline">
+            Projetos
+          </Link>
+          <Link to="/about" className="hover:underline">
+            Sobre
+          </Link>
+          <Link to="/contact" className="hover:underline">
+            Contato
+          </Link>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 }
