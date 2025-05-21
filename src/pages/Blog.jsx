@@ -1,13 +1,16 @@
-// src/pages/Blog.jsx
-import { Link } from 'react-router-dom';
-import { posts } from '../data/posts';
+import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
+import { posts } from "../data/posts";
 
 export function Blog() {
+  const { t } = useLanguage();
   return (
     <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Blog</h1>
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+        {t("blog.title")}
+      </h1>
       <div className="mt-8 space-y-10">
-        {posts.map(post => (
+        {posts.map((post) => (
           <article key={post.slug} className="border-b pb-6 dark:border-gray-700">
             <Link
               to={`/blog/${post.slug}`}

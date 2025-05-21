@@ -1,13 +1,17 @@
+import { useLanguage } from "../context/LanguageContext";
+
 export function About() {
+  const { t } = useLanguage();
   return (
     <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Sobre mim</h1>
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+        {t("about.heading")}
+      </h1>
       <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-        Meu nome é Henrique Almeida (rickshf). Sou desenvolvedor web com foco em performance, acessibilidade e simplicidade. 
-        Gosto de criar interfaces limpas e funcionais com tecnologias modernas como React, Tailwind CSS e Vite.
+        {t("about.desc1")}
       </p>
       <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-        Além de programação, tenho interesse em design minimalista, software open source, e produtividade digital.
+        {t("about.desc2")}
       </p>
     </section>
   );
