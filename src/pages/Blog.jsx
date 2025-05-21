@@ -15,9 +15,14 @@ export function Blog() {
             <time className="text-sm text-gray-500 dark:text-gray-400 mb-2">
               {post.date}
             </time>
-            <ReactMarkdown className="prose dark:prose-invert max-w-none">
-              {post.content}
-            </ReactMarkdown>
+
+            {/* Aqui aplicamos o estilo de “prose” no container, não no ReactMarkdown */}
+            <div className="prose dark:prose-invert max-w-none">
+              <ReactMarkdown>
+                {post.content}
+              </ReactMarkdown>
+            </div>
+
           </article>
         ))}
       </div>
