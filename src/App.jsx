@@ -5,7 +5,7 @@ import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Blog } from "./pages/Blog";
 import { Contact } from "./pages/Contact";
-import { Navbar } from "./components/NavBar";
+import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
 export default function App() {
