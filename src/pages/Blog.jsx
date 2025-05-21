@@ -1,5 +1,5 @@
 // src/pages/Blog.jsx
-import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 import { posts } from '../data/posts';
 
 export function Blog() {
@@ -9,20 +9,18 @@ export function Blog() {
       <div className="mt-8 space-y-10">
         {posts.map(post => (
           <article key={post.slug} className="border-b pb-6 dark:border-gray-700">
-            <h2 className="text-2xl font-semibold text-blue-600 dark:text-blue-400">
+            <Link
+              to={`/blog/${post.slug}`}
+              className="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
               {post.title}
-            </h2>
-            <time className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+            </Link>
+            <time className="block text-sm text-gray-500 dark:text-gray-400 mb-2">
               {post.date}
             </time>
-
-            {/* Aqui aplicamos o estilo de “prose” no container, não no ReactMarkdown */}
-            <div className="prose dark:prose-invert max-w-none">
-              <ReactMarkdown>
-                {post.content}
-              </ReactMarkdown>
-            </div>
-
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {post.content.slice(0, 200)}…
+            </p>
           </article>
         ))}
       </div>
