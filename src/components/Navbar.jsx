@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -16,7 +15,6 @@ export function Navbar() {
           <Link to="/projects" className="hover:underline">{t("nav.projects")}</Link>
           <Link to="/blog" className="hover:underline">{t("nav.blog")}</Link>
           <Link to="/contact" className="hover:underline">{t("nav.contact")}</Link>
-          {/* Seletor de idioma */}
           <select
             value={lang}
             onChange={(e) => setLang(e.target.value)}
@@ -28,5 +26,5 @@ export function Navbar() {
         </div>
       </div>
     </nav>
-  );  // ← aqui estava faltando esse “);”
+  );
 }
