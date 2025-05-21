@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Home() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
@@ -13,29 +15,29 @@ export function Home() {
       </h1>
 
       <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-10">
-        Desenvolvedor web com foco em minimalismo, código limpo e boas práticas. 
+        Desenvolvedor web com foco em minimalismo, código limpo e boas práticas.
         Crio aplicações modernas com React, Tailwind e tecnologias open source.
       </p>
 
       <div className="flex flex-wrap justify-center gap-4">
-        <a
-          href="/projects"
+        <Link
+          to="/projects"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           Meus Projetos
-        </a>
-        <a
-          href="/about"
+        </Link>
+        <Link
+          to="/about"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           Sobre mim
-        </a>
-        <a
-          href="/contact"
+        </Link>
+        <Link
+          to="/contact"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           Contato
-        </a>
+        </Link>
       </div>
     </section>
   );

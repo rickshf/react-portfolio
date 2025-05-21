@@ -11,6 +11,9 @@ export function Navbar() {
           <Link to="/projects" className="hover:underline">
             Projetos
           </Link>
+          <Link to="/blog" className="hover:underline">
+            Blog
+          </Link>
           <Link to="/about" className="hover:underline">
             Sobre
           </Link>
