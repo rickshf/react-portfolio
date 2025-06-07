@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
-import { posts } from "../data/posts";
+import { loadPosts } from "../data/loadPosts";
+
+const posts = loadPosts();
 
 export function Blog() {
   const { t } = useLanguage();

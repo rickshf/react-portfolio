@@ -2,7 +2,9 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { useLanguage } from "../context/LanguageContext";
-import { posts } from "../data/posts";
+import { loadPosts } from "../data/loadPosts";
+
+const posts = loadPosts();
 
 export function Post() {
   const { slug } = useParams();
