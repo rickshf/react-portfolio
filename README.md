@@ -50,8 +50,8 @@ site, portanto não é necessário editar outros arquivos.
 
 ### Idioma e tema
 
-O gerenciamento de tema é feito pelos arquivos `src/context/ThemeContext.js` e
-`src/context/ThemeContext.jsx`, que controlam apenas o modo claro ou escuro.
+O gerenciamento de tema é feito pelo arquivo `src/context/ThemeContext.jsx`,
+que controla apenas o modo claro ou escuro.
 Não há variável de idioma definida nesses arquivos. Para habilitar o modo
 escuro do Tailwind, adicione a classe `dark` ao elemento `<html>` em
 `index.html`.
@@ -107,7 +107,7 @@ Setting the `VITE_LINKEDIN_URL` and `VITE_CONTACT_EMAIL` environment variables c
 
 ### Language and theme
 
-Theme management lives in `src/context/ThemeContext.js` and
-`src/context/ThemeContext.jsx` and only handles the light/dark mode. There is no
+Theme management lives in `src/context/ThemeContext.jsx` and only handles the
+light/dark mode. There is no
 language variable defined in that context. To enable dark mode, add the `dark`
 class to the `<html>` element in `index.html`.
