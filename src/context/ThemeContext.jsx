@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-// Context used to share theme information across components
+// Context used to share theme information across components.
+// The current theme is persisted in localStorage so it survives page reloads.
 
 const ThemeContext = createContext();
 

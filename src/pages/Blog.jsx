@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+// Helper that reads all Markdown files under src/posts
 import { loadPosts } from "../data/loadPosts";
 
+// Posts are loaded once when this module is imported
 const posts = loadPosts();
 
 export function Blog() {
@@ -10,6 +12,7 @@ export function Blog() {
         Blog
       </h1>
       <div className="mt-8 space-y-10">
+        {/* List each post with a link to its detail page */}
         {posts.map((post) => (
           <article key={post.slug} className="border-b pb-6 dark:border-gray-700">
             <Link
