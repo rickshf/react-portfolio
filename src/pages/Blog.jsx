@@ -14,7 +14,10 @@ export function Blog() {
       <div className="mt-8 space-y-10">
         {/* List each post with a link to its detail page */}
         {posts.map((post) => (
-          <article key={post.slug} className="border-b pb-6 dark:border-gray-700">
+          <article
+            key={post.slug}
+            className="border-b pb-6 dark:border-gray-700"
+          >
             <Link
               to={`/blog/${post.slug}`}
               className="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:underline"
@@ -24,6 +27,9 @@ export function Blog() {
             <time className="block text-sm text-gray-500 dark:text-gray-400 mb-2">
               {post.date}
             </time>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+              {post.excerpt}
+            </p>
           </article>
         ))}
       </div>
