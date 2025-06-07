@@ -39,25 +39,13 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
 
 ### Criar novos posts
 
-1. Adicione um arquivo Markdown em `src/posts/` com `title` e `date` no cabeçalho.
-2. Importe o conteúdo no arquivo `src/data/posts.js` usando `?raw`:
-
-   ```javascript
-   import novoPost from "../posts/novo-post.md?raw";
-
-   export const posts = [
-     {
-       title: "Título do post",
-       date: "2025-05-21",
-       slug: "novo-post",
-       content: novoPost,
-     },
-   ];
-   ```
+Para adicionar um novo post, basta colocar um arquivo Markdown em `src/posts/`
+com `title` e `date` no cabeçalho. Os arquivos são lidos automaticamente pelo
+site, portanto não é necessário editar outros arquivos.
 
 ### Idioma e tema
 
-O idioma padrão é configurado em `src/context/LanguageContext.jsx`. Altere o
+O idioma padrão é configurado em `src/context/ThemeContext.jsx`. Altere o
 valor da variável `lang` para `pt` ou `en` conforme necessário. Para habilitar o
 modo escuro do Tailwind, adicione a classe `dark` ao elemento `<html>` em
 `index.html`.
@@ -104,11 +92,10 @@ This project is licensed under the [MIT License](LICENSE).
 ### Creating new posts
 
 1. Add a Markdown file in `src/posts/` with a `title` and `date` front matter.
-2. Import it in `src/data/posts.js` using `?raw` and add an entry to the
-   `posts` array as shown above.
+   The site will pick it up automatically; no other files need to be changed.
 
 ### Language and theme
 
-The default language is set in `src/context/LanguageContext.jsx`. Change the
+The default language is set in `src/context/ThemeContext.jsx`. Change the
 `lang` variable to `en` or `pt`. To enable dark mode, add the `dark` class to the
 `<html>` element in `index.html`.
