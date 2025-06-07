@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { posts } from "../data/posts";
 import { loadPosts } from "../data/loadPosts";
 
 const posts = loadPosts();
