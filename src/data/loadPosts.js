@@ -10,8 +10,9 @@ const modules = import.meta.glob('../posts/*.md', {
 // It expects front matter in the form:
 // ---\ntitle: "My Title"\ndate: "2024-01-01"\n---\n
 function parseFrontMatter(raw) {
-  // Regex captures metadata between --- markers and the remaining Markdown
-  const match = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/m.exec(raw);
+  // Regex captures metadata between --- markers and the remaining Markdown.
+  // Support both LF and CRLF line endings.
+  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/m.exec(raw);
   let metadata = {};
   let content = raw;
   if (match) {
