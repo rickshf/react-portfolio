@@ -10,7 +10,7 @@ function parseFrontMatter(raw) {
     const fm = match[1];
     content = match[2];
     fm.split('\n').forEach((line) => {
-      const idx = line.index(":");
+      const idx = line.indexOf(":");
       if (idx !== -1) {
         const key = line.slice(0, idx).trim();
         let value = line.slice(idx + 1).trim();
