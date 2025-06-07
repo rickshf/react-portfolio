@@ -1,20 +1,18 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import { useLanguage } from "../context/LanguageContext";
 import { posts } from "../data/posts";
 
 export function Post() {
   const { slug } = useParams();
-  const { t } = useLanguage();
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     return (
       <section className="max-w-3xl mx-auto px-4 py-16">
-        <h1 className="text-2xl font-bold">{t("post.notFound")}</h1>
+        <h1 className="text-2xl font-bold">Post not found</h1>
         <Link to="/blog" className="text-blue-500 hover:underline">
-          {t("blog.backToList")}
+          ← Back to blog
         </Link>
       </section>
     );
@@ -30,7 +28,7 @@ export function Post() {
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </div>
       <Link to="/blog" className="text-blue-500 hover:underline">
-        {t("blog.backToList")}
+        ← Back to blog
       </Link>
     </section>
   );
