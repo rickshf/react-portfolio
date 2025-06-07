@@ -45,10 +45,10 @@ site, portanto não é necessário editar outros arquivos.
 
 ### Idioma e tema
 
-O idioma padrão é configurado em `src/context/ThemeContext.jsx`. Altere o
-valor da variável `lang` para `pt` ou `en` conforme necessário. Para habilitar o
-modo escuro do Tailwind, adicione a classe `dark` ao elemento `<html>` em
-`index.html`.
+O gerenciamento de tema é feito em `src/context/ThemeContext.jsx`, que controla
+apenas o modo claro ou escuro. Não há variável de idioma definida nesse
+arquivo. Para habilitar o modo escuro do Tailwind, adicione a classe `dark` ao
+elemento `<html>` em `index.html`.
 
 O conteúdo deste site está disponível em português e inglês.
 
@@ -96,6 +96,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ### Language and theme
 
-The default language is set in `src/context/ThemeContext.jsx`. Change the
-`lang` variable to `en` or `pt`. To enable dark mode, add the `dark` class to the
-`<html>` element in `index.html`.
+Theme management lives in `src/context/ThemeContext.jsx` and only handles the
+light/dark mode. There is no language variable defined in that context. To
+enable dark mode, add the `dark` class to the `<html>` element in `index.html`.
