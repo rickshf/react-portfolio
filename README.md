@@ -23,4 +23,4 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
    npm run build
    ```
 
-Durante a navegação, é possível alternar o idioma do site pelo seletor localizado na barra de navegação. As opções disponíveis são `PT` e `EN`.
+O conteúdo deste site está disponível em português.
