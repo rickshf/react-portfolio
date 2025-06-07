@@ -1,4 +1,3 @@
-import { useLanguage } from "../context/LanguageContext";
 
 const projetos = [
   {
@@ -22,14 +21,13 @@ const projetos = [
 ];
 
 export function Projects() {
-  const { t } = useLanguage();
   return (
     <section className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
-        {t("projects.heading")}
+        Projects
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
-        {t("projects.description").replace("{count}", projetos.length)} {/* optional */}
+        You have {projetos.length} projects.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projetos.map((proj) => (
@@ -38,7 +36,7 @@ export function Projects() {
               {proj.title}
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              {proj.desc.pt}
+              {proj.desc.en}
             </p>
             {proj.link !== "#" && (
               <a
@@ -47,7 +45,7 @@ export function Projects() {
                 rel="noopener noreferrer"
                 className="text-sm underline text-blue-500 dark:text-blue-400"
               >
-                {t("projects.viewGithub")}
+                View on GitHub
               </a>
             )}
           </div>

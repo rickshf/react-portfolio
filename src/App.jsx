@@ -7,30 +7,27 @@ import { Post } from "./pages/Post";
 import { Contact } from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { LanguageProvider } from "./context/LanguageContext";
-import { ThemeProvider } from "./context/ThemeContext";
+
+
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <Router>
-          <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
-            <Navbar />
-            <main className="max-w-4xl mx-auto px-4 py-8">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:slug" element={<Post />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
-        </Router>
-      </LanguageProvider>
-    </ThemeProvider>
+    <Router>
+      <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+        <Navbar />
+        <main className="max-w-4xl mx-auto px-4 py-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<Post />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+
   );
 }
