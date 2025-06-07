@@ -21,6 +21,7 @@ export const translations = {
     },
     projects: {
       heading: "Projetos",
+      description: "Você possui {count} projetos.",
       viewGithub: "Ver no GitHub"
     },
     blog: {
@@ -60,6 +61,7 @@ export const translations = {
     },
     projects: {
       heading: "Projects",
+      description: "You have {count} projects.",
       viewGithub: "View on GitHub"
     },
     blog: {
