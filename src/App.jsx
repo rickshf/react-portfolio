@@ -9,7 +9,7 @@ import { NotFound } from "./pages/NotFound";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 // Provides theme state (light/dark) to the rest of the app
-import { ThemeProvider } from "./context/ThemeContext";
+import ThemeProvider from "./context/ThemeContext";
 
 export default function App() {
   return (

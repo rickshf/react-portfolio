@@ -1,11 +1,11 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 // Context used to share theme information across components.
 // The current theme is persisted in localStorage so it survives page reloads.
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 
-export function ThemeProvider({ children }) {
+function ThemeProvider({ children }) {
   const getInitialTheme = () => {
     if (typeof window === "undefined") return "light";
     const stored = localStorage.getItem("theme");
@@ -37,6 +37,4 @@ export function ThemeProvider({ children }) {
   );
 }
 
-export function useTheme() {
-  return useContext(ThemeContext);
-}
+export default ThemeProvider;
