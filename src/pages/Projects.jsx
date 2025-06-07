@@ -1,6 +1,6 @@
 
 // Static list of projects shown on the Projects page
-const projetos = [
+const projects = [
   {
     slug: "portfolio",
     title: "Portfolio",
@@ -28,11 +28,11 @@ export function Projects() {
         Projects
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
-        You have {projetos.length} projects.
+        You have {projects.length} projects.
       </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Render a simple card for each project */}
-          {projetos.map((proj) => (
+          {projects.map((proj) => (
           <div key={proj.slug} className="border rounded p-4 dark:border-gray-700 hover:shadow transition">
             <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">
               {proj.title}
