@@ -36,6 +36,9 @@ export const translations = {
       linkedin: "LinkedIn",
       orEmail: " ou enviar um e-mail para ",
       email: "seuemail@exemplo.com"
+    },
+    footer: {
+      copyright: "© {year} Henrique Almeida. Todos os direitos reservados."
     }
   },
   en: {
@@ -75,6 +78,9 @@ export const translations = {
       linkedin: "LinkedIn",
       orEmail: " or send an email to ",
       email: "your.email@example.com"
+    },
+    footer: {
+      copyright: "© {year} Henrique Almeida. All rights reserved."
     }
   }
 };
