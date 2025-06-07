@@ -22,7 +22,7 @@ const projetos = [
 ];
 
 export function Projects() {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
   return (
     <section className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
@@ -38,7 +38,7 @@ export function Projects() {
               {proj.title}
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              {proj.desc[lang]}
+              {proj.desc.pt}
             </p>
             {proj.link !== "#" && (
               <a
