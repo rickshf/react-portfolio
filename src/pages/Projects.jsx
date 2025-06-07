@@ -29,7 +29,7 @@ export function Projects() {
         {t("projects.heading")}
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
-        {t("projects.description", projetos.length)} {/* optional */}
+        {t("projects.description").replace("{count}", projetos.length)} {/* optional */}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projetos.map((proj) => (
