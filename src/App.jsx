@@ -8,6 +8,8 @@ import { Contact } from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
+
+
 export default function App() {
   return (
     <Router>
@@ -26,5 +28,6 @@ export default function App() {
         <Footer />
       </div>
     </Router>
+
   );
 }
