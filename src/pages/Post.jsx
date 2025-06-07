@@ -32,7 +32,7 @@ export function Post() {
       <time className="block text-sm text-gray-500">{post.date}</time>
       <div className="prose dark:prose-invert max-w-none">
         {/* Render the Markdown content of the post */}
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <ReactMarkdown skipHtml>{post.content}</ReactMarkdown>
       </div>
       <Link to="/blog" className="text-blue-500 hover:underline">
         ← Back to blog
