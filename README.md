@@ -40,6 +40,7 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
 ### Personalizando links de contato
 
 Defina as variáveis `VITE_LINKEDIN_URL` e `VITE_CONTACT_EMAIL` em um arquivo `.env` na raiz do projeto para alterar os links exibidos na página de contato. Essas configurações serão usadas ao rodar `npm run dev` ou `npm run build`.
+Você pode usar o arquivo `.env.example` como base, copiando-o para `.env` e ajustando os valores desejados.
 
 
 ### Criar novos posts
@@ -98,6 +99,7 @@ This project is licensed under the [MIT License](LICENSE).
 ### Customizing contact links
 
 Setting the `VITE_LINKEDIN_URL` and `VITE_CONTACT_EMAIL` environment variables changes the links shown on the Contact page. Create a `.env` file at the project root with the desired values. They will be used when running `npm run dev` or `npm run build`.
+An example file called `.env.example` is provided; copy it to `.env` and adjust the values as needed.
 
 
 ### Creating new posts
