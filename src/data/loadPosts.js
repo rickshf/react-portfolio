@@ -1,6 +1,10 @@
 // Vite helper that eagerly imports all Markdown files from the posts folder
-// Eagerly import all Markdown files so the posts can be statically generated
-const modules = import.meta.glob('../posts/*.md', { as: 'raw', eager: true });
+// Use the modern "query" option to read the raw Markdown content
+const modules = import.meta.glob('../posts/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
 
 // Simple front matter parser for the markdown files
 // It expects front matter in the form:
@@ -29,6 +33,16 @@ function parseFrontMatter(raw) {
   return { metadata, content };
 }
 
+// Grab the first non-empty line of the Markdown as a short preview
+function getExcerpt(content) {
+  const line = content
+    .split('\n')
+    .map((l) => l.trim())
+    .find((l) => l);
+  if (!line) return '';
+  return line.replace(/^#+\s*/, '').slice(0, 140);
+}
+
 // Load all posts and return them sorted by date (newest first)
 export function loadPosts() {
   return Object.entries(modules)
@@ -40,6 +54,7 @@ export function loadPosts() {
         title: metadata.title || slug,
         date: metadata.date || '',
         content,
+        excerpt: getExcerpt(content),
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
