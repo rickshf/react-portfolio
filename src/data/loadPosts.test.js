@@ -22,4 +22,13 @@ describe('loadPosts', () => {
     const sorted = [...dates].sort((a,b) => new Date(b) - new Date(a));
     expect(dates).toEqual(sorted);
   });
+
+  it('handles posts with CRLF line endings', () => {
+    const posts = loadPosts();
+    const crlf = posts.find(p => p.slug === 'crlf-post');
+    expect(crlf).toBeDefined();
+    expect(crlf.title).toBe('Post CRLF');
+    expect(crlf.date).toBe('2025-07-01');
+    expect(crlf.excerpt).toBe('Este post tem CRLF.');
+  });
 });
