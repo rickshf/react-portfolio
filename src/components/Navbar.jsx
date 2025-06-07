@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
+// Custom hook that exposes the current theme and a toggle helper
+// The hook is defined in src/context/useTheme.js
+import useTheme from "../context/useTheme";
 
 
 export function Navbar() {
@@ -17,6 +19,7 @@ export function Navbar() {
           <Link to="/projects" className="hover:underline">Projects</Link>
           <Link to="/blog" className="hover:underline">Blog</Link>
           <Link to="/contact" className="hover:underline">Contact</Link>
+          {/* Toggle between light and dark mode */}
           <button
             type="button"
             onClick={toggleTheme}

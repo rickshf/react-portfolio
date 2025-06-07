@@ -1,3 +1,4 @@
+// Allow customization via Vite environment variables when building the site
 const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL ||
   "https://linkedin.com/in/rickshf";
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "rickshf@example.com";
@@ -17,6 +18,7 @@ export function Contact() {
           LinkedIn
         </a>
         {" "}
+        {/* Show configured contact email */}
         or send an email to
         <a
           href={`mailto:${EMAIL}`}
