@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { posts } from "../data/posts";
-import { useLanguage } from "../context/LanguageContext";
 import { loadPosts } from "../data/loadPosts";
 
 const posts = loadPosts();
