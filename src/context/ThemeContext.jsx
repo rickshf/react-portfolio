@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
+// Context used to share theme information across components
+
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
@@ -22,6 +24,7 @@ export function ThemeProvider({ children }) {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // Simple toggle between light and dark modes
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
