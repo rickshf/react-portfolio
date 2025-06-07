@@ -14,7 +14,7 @@ import ThemeProvider from "./context/ThemeProvider.jsx";
 export default function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
           <Navbar />
           <main className="max-w-4xl mx-auto px-4 py-8">
