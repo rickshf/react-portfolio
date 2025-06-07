@@ -1,9 +1,9 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 // Context used to share theme information across components.
 // The current theme is persisted in localStorage so it survives page reloads.
 
-export const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
   // Determine the initial theme when the provider mounts
