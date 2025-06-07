@@ -37,6 +37,11 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
    npm run preview
    ```
 
+### Personalizando links de contato
+
+Defina as variáveis `VITE_LINKEDIN_URL` e `VITE_CONTACT_EMAIL` em um arquivo `.env` na raiz do projeto para alterar os links exibidos na página de contato. Essas configurações serão usadas ao rodar `npm run dev` ou `npm run build`.
+
+
 ### Criar novos posts
 
 Para adicionar um novo post, basta colocar um arquivo Markdown em `src/posts/`
@@ -88,6 +93,11 @@ This project is licensed under the [MIT License](LICENSE).
    ```bash
    npm run preview
    ```
+
+### Customizing contact links
+
+Setting the `VITE_LINKEDIN_URL` and `VITE_CONTACT_EMAIL` environment variables changes the links shown on the Contact page. Create a `.env` file at the project root with the desired values. They will be used when running `npm run dev` or `npm run build`.
+
 
 ### Creating new posts
 
