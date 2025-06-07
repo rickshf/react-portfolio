@@ -31,7 +31,13 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
    npm run lint
    ```
 
-5. Visualize a build gerada:
+5. Execute os testes:
+
+   ```bash
+   npm test
+   ```
+
+6. Visualize a build gerada:
 
    ```bash
    npm run preview
@@ -90,7 +96,13 @@ This project is licensed under the [MIT License](LICENSE).
    npm run lint
    ```
 
-5. Preview the generated site:
+5. Run the tests:
+
+   ```bash
+   npm test
+   ```
+
+6. Preview the generated site:
 
    ```bash
    npm run preview
