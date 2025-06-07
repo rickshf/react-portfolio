@@ -6,6 +6,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
+  // Determine the initial theme when the provider mounts
   const getInitialTheme = () => {
     if (typeof window === "undefined") return "light";
     const stored = localStorage.getItem("theme");
@@ -15,6 +16,7 @@ function ThemeProvider({ children }) {
 
   const [theme, setTheme] = useState(getInitialTheme);
 
+  // Whenever the theme changes, update the root element and save it
   useEffect(() => {
     const root = document.documentElement;
     if (theme === "dark") {
