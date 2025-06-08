@@ -9,6 +9,15 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
 
 Este projeto requer **Node.js 18** ou superior.
 
+### Configuração
+
+Copie o arquivo `.env.example` para `.env` antes de iniciar o projeto:
+```bash
+cp .env.example .env
+```
+Altere os valores conforme desejar.
+
+
 1. Instale as dependências:
 
    ```bash
@@ -75,6 +84,15 @@ This project is licensed under the [MIT License](LICENSE).
 ### Development
 
 This project requires **Node.js 18** or newer.
+
+### Configuration
+
+Copy `.env.example` to `.env` before starting the project:
+```bash
+cp .env.example .env
+```
+Then adjust the values as needed.
+
 
 1. Install dependencies:
 
