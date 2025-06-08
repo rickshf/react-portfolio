@@ -16,9 +16,9 @@ export function Post() {
   if (!post) {
     return (
       <section className="max-w-3xl mx-auto px-4 py-16">
-        <h1 className="text-2xl font-bold">Post not found</h1>
+        <h1 className="text-2xl font-bold">Post não encontrado</h1>
         <Link to="/blog" className="text-blue-500 hover:underline">
-          ← Back to blog
+          ← Voltar para o blog
         </Link>
       </section>
     );
@@ -35,7 +35,7 @@ export function Post() {
         <ReactMarkdown skipHtml>{post.content}</ReactMarkdown>
       </div>
       <Link to="/blog" className="text-blue-500 hover:underline">
-        ← Back to blog
+        ← Voltar para o blog
       </Link>
     </section>
   );
