@@ -65,6 +65,11 @@ Não há variável de idioma definida nesses arquivos. Para habilitar o modo
 escuro do Tailwind, adicione a classe `dark` ao elemento `<html>` em
 `index.html`.
 
+### Personalizando metadados de redes sociais
+
+Altere no arquivo `index.html` os valores das tags `og:image`, `twitter:card` e
+`<link rel="canonical">` para refletir sua imagem e URL preferidas.
+
 Todo o conteúdo deste site está disponível apenas em português.
 
 ## English
@@ -129,3 +134,8 @@ Theme management lives in `src/context/ThemeContext.js` and `src/context/ThemePr
 light/dark mode. There is no
 language variable defined in that context. To enable dark mode, add the `dark`
 class to the `<html>` element in `index.html`.
+
+### Customizing social meta tags
+
+Edit `index.html` and change the `og:image`, `twitter:card` and
+`canonical` tags to use your own image and URL.
