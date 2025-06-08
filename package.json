@@ -33,5 +33,6 @@
     "tailwindcss": "^4.1.7",
     "vite": "^6.3.5",
     "vitest": "^3.2.2"
-  }
+  },
+  "license": "MIT"
 }
