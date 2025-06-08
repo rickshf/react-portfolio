@@ -23,10 +23,13 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            aria-label="Toggle theme"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
             className="text-lg"
           >
             {theme === "dark" ? "☀️" : "🌙"}
+            <span aria-live="polite" className="sr-only">
+              {theme === "dark" ? "Dark mode enabled" : "Light mode enabled"}
+            </span>
           </button>
 
         </div>
