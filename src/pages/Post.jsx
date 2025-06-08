@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 // Load posts directly from the Markdown files so the blog and post
 // pages use the exact same data source
 import { loadPosts } from "../data/loadPosts";
@@ -32,7 +33,9 @@ export function Post() {
       <time className="block text-sm text-gray-500">{post.date}</time>
       <div className="prose dark:prose-invert max-w-none">
         {/* Render the Markdown content of the post */}
-        <ReactMarkdown skipHtml>{post.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} skipHtml>
+          {post.content}
+        </ReactMarkdown>
       </div>
       <Link to="/blog" className="text-blue-500 hover:underline">
         ← Voltar para o blog
