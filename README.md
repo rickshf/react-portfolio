@@ -41,6 +41,7 @@ Altere os valores conforme desejar.
    ```bash
    npm run lint
    ```
+   **Obs.:** rode `npm install` antes de executar `npm run lint`.
 
 5. Execute os testes (rode `npm install` antes, se necessário):
 
@@ -53,6 +54,14 @@ Altere os valores conforme desejar.
    ```bash
    npm run preview
    ```
+
+### Docker (opcional)
+
+Use o container oficial do Node para rodar lint e testes:
+
+```bash
+docker run --rm -it -v $(pwd):/app -w /app node:18 bash -c "npm install && npm run lint && npm test"
+```
 
 ### Personalizando links de contato
 
@@ -128,6 +137,7 @@ Then adjust the values as needed.
    ```bash
    npm run lint
    ```
+   **Note:** run `npm install` before `npm run lint`.
 
 5. Run the tests (run `npm install` first if needed):
 
@@ -140,6 +150,14 @@ Then adjust the values as needed.
    ```bash
    npm run preview
    ```
+
+### Docker (optional)
+
+Run lint and tests inside the official Node container:
+
+```bash
+docker run --rm -it -v $(pwd):/app -w /app node:18 bash -c "npm install && npm run lint && npm test"
+```
 
 ### Customizing contact links
 
