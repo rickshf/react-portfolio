@@ -50,13 +50,21 @@ export function loadPosts() {
     .map(([path, raw]) => {
       const { metadata, content } = parseFrontMatter(raw);
       const slug = path.split('/').pop().replace(/\.md$/, '');
+      const rawDate = metadata.date || '';
+      const parsed = new Date(rawDate);
+      const safeDate = isNaN(parsed) ? new Date(0) : parsed;
       return {
         slug,
         title: metadata.title || slug,
-        date: metadata.date || '',
+        date: rawDate,
         content,
         excerpt: getExcerpt(content),
+        _dateObj: safeDate,
       };
     })
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
+    .sort((a, b) => b._dateObj - a._dateObj)
+    .map((post) => {
+      const { _dateObj, ...rest } = post;
+      return rest;
+    });
 }
