@@ -11,6 +11,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "pretest": "node -e \"const fs=require('fs'); if(!fs.existsSync('node_modules')) { console.error('Please run npm install before running tests.'); process.exit(1); }\"",
     "test": "vitest run"
   },
   "dependencies": {
