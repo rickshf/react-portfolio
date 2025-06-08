@@ -42,7 +42,7 @@ Altere os valores conforme desejar.
    npm run lint
    ```
 
-5. Execute os testes:
+5. Execute os testes (rode `npm install` antes, se necessário):
 
    ```bash
    npm test
@@ -118,7 +118,7 @@ Then adjust the values as needed.
    npm run lint
    ```
 
-5. Run the tests:
+5. Run the tests (run `npm install` first if needed):
 
    ```bash
    npm test
