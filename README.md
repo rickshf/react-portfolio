@@ -57,6 +57,12 @@ Para adicionar um novo post, basta colocar um arquivo Markdown em `src/posts/`
 com `title` e `date` no cabeçalho. Os arquivos são lidos automaticamente pelo
 site, portanto não é necessário editar outros arquivos.
 
+### Formato do `projects.json`
+
+Os projetos exibidos na página são definidos no arquivo `src/data/projects.json`.
+Ele contém um array de objetos com os campos `slug`, `title`, `desc.pt`,
+`desc.en` e `link`. Edite esse arquivo para adicionar ou remover projetos.
+
 ### Idioma e tema
 
 O gerenciamento de tema é feito pelos arquivos `src/context/ThemeContext.js` e
@@ -122,6 +128,12 @@ An example file called `.env.example` is provided; copy it to `.env` and adjust 
 
 1. Add a Markdown file in `src/posts/` with a `title` and `date` front matter.
    The site will pick it up automatically; no other files need to be changed.
+
+### Projects file format
+
+The Projects page reads from `src/data/projects.json`. Each entry has `slug`,
+`title`, `desc.pt`, `desc.en` and `link` fields. Edit this file to add or remove
+projects.
 
 ### Language and theme
 
