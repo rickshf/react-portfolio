@@ -8,16 +8,18 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-sitemap.js",
     "lint": "eslint .",
     "preview": "vite preview",
+    "pretest": "node -e \"const fs=require('fs'); if(!fs.existsSync('node_modules')) { console.error('Please run npm install before running tests.'); process.exit(1); }\"",
     "test": "vitest run"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.6.0"
+    "react-router-dom": "^7.6.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

@@ -1,25 +1,6 @@
 
-// Static list of projects shown on the Projects page
-const projects = [
-  {
-    slug: "portfolio",
-    title: "Portfolio",
-    desc: {
-      pt: "Este próprio portfólio, construído com React, Tailwind e Vite.",
-      en: "This very portfolio, built with React, Tailwind and Vite."
-    },
-    link: "https://github.com/rickshf"
-  },
-  {
-    slug: "soon",
-    title: "Em breve",
-    desc: {
-      pt: "Aplicações, ferramentas e contribuições open source.",
-      en: "Apps, tools and open source contributions."
-    },
-    link: "#"
-  }
-];
+// Project data is defined in ../data/projects.json
+import projects from "../data/projects.json";
 
 export function Projects() {
   return (
