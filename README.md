@@ -63,7 +63,7 @@ Não há variável de idioma definida nesses arquivos. Para habilitar o modo
 escuro do Tailwind, adicione a classe `dark` ao elemento `<html>` em
 `index.html`.
 
-O conteúdo deste site está disponível em português e inglês.
+Todo o conteúdo deste site está disponível apenas em português.
 
 ## English
 

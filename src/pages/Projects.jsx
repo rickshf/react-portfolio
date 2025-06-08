@@ -25,10 +25,10 @@ export function Projects() {
   return (
     <section className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
-        Projects
+        Projetos
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
-        You have {projects.length} projects.
+        Você tem {projects.length} projetos.
       </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Render a simple card for each project */}
@@ -38,7 +38,7 @@ export function Projects() {
               {proj.title}
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              {proj.desc.en}
+              {proj.desc.pt}
             </p>
             {proj.link !== "#" && (
               <a
@@ -47,7 +47,7 @@ export function Projects() {
                 rel="noopener noreferrer"
                 className="text-sm underline text-blue-500 dark:text-blue-400"
               >
-                View on GitHub
+                Ver no GitHub
               </a>
             )}
           </div>

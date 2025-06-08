@@ -14,11 +14,11 @@ export function Navbar() {
           rickshf
         </Link>
         <div className="flex items-center space-x-4">
-          <Link to="/" className="hover:underline">Home</Link>
-          <Link to="/about" className="hover:underline">About</Link>
-          <Link to="/projects" className="hover:underline">Projects</Link>
+          <Link to="/" className="hover:underline">Início</Link>
+          <Link to="/about" className="hover:underline">Sobre</Link>
+          <Link to="/projects" className="hover:underline">Projetos</Link>
           <Link to="/blog" className="hover:underline">Blog</Link>
-          <Link to="/contact" className="hover:underline">Contact</Link>
+          <Link to="/contact" className="hover:underline">Contato</Link>
           {/* Toggle between light and dark mode */}
           <button
             type="button"

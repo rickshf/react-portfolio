@@ -6,9 +6,9 @@ const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "rickshf@example.com";
 export function Contact() {
   return (
     <section>
-      <h2 className="text-3xl font-bold mb-4">Contact</h2>
+      <h2 className="text-3xl font-bold mb-4">Contato</h2>
       <p className="text-gray-700 dark:text-gray-300">
-        You can find me on
+        Você me encontra no
         <a
           href={LINKEDIN_URL}
           className="underline text-blue-600 dark:text-blue-400"
@@ -19,7 +19,7 @@ export function Contact() {
         </a>
         {" "}
         {/* Show configured contact email */}
-        or send an email to
+        ou envie um e-mail para
         <a
           href={`mailto:${EMAIL}`}
           className="underline text-blue-600 dark:text-blue-400"

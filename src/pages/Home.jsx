@@ -10,7 +10,7 @@ export function Home() {
       </h1>
 
       <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-10">
-        Web developer focusing on minimalism, clean code and best practices.
+        Desenvolvedor web focado em minimalismo, código limpo e boas práticas.
       </p>
 
       <div className="flex flex-wrap justify-center gap-4">
@@ -18,19 +18,19 @@ export function Home() {
           to="/projects"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
-          My Projects
+          Projetos
         </Link>
         <Link
           to="/about"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
-          About me
+          Sobre mim
         </Link>
         <Link
           to="/contact"
           className="px-6 py-2 text-sm border rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
-          Contact
+          Contato
         </Link>
       </div>
     </section>
