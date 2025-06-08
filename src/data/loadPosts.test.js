@@ -31,4 +31,12 @@ describe('loadPosts', () => {
     expect(crlf.date).toBe('2025-07-01');
     expect(crlf.excerpt).toBe('Este post tem CRLF.');
   });
+
+  it('places posts with invalid dates last', () => {
+    const posts = loadPosts();
+    const invalid = posts.find(p => p.slug === 'invalid-date-post');
+    expect(invalid).toBeDefined();
+    expect(invalid.date).toBe('not-a-date');
+    expect(posts[posts.length - 1].slug).toBe('invalid-date-post');
+  });
 });
