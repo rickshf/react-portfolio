@@ -5,7 +5,6 @@ const projects = [
     slug: "portfolio",
     title: "Portfolio",
     desc: {
-      pt: "Este próprio portfólio, construído com React, Tailwind e Vite.",
       en: "This very portfolio, built with React, Tailwind and Vite."
     },
     link: "https://github.com/rickshf"
@@ -14,7 +13,6 @@ const projects = [
     slug: "soon",
     title: "Em breve",
     desc: {
-      pt: "Aplicativos, ferramentas e contribuições open source.",
       en: "Apps, tools and open source contributions."
     },
     link: "#"
