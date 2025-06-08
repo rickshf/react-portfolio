@@ -7,6 +7,8 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
 
 ### Desenvolvimento
 
+Este projeto requer **Node.js 18** ou superior.
+
 1. Instale as dependências:
 
    ```bash
@@ -71,6 +73,8 @@ Todo o conteúdo deste site está disponível apenas em português.
 This project is licensed under the [MIT License](LICENSE).
 
 ### Development
+
+This project requires **Node.js 18** or newer.
 
 1. Install dependencies:
 
